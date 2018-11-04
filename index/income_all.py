@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Nov  3 14:44:38 2018
+绘图计算各个指数的净利润增长情况
 
 @author: duming
 """
