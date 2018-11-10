@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov  3 14:44:38 2018
+Created on 
 绘图计算各个指数的净利润增长情况(在同一个图中)
 
 @author: duming
@@ -45,6 +45,7 @@ def year_ratio(arr):
 
 income_pd = pd.read_csv('../data/income.csv',index_col=0)
 income_pd = income_pd / 1e8
+print(income_pd.head())
 plt_income(income_pd['000016'].values.tolist(),income_pd['000016'].index.tolist(),'上证50')
 plt_income(income_pd['399905'].values.tolist(),income_pd['399905'].index.tolist(),'中证500')
 plt_income(income_pd['000932'].values.tolist(),income_pd['000932'].index.tolist(),'中证消费')
