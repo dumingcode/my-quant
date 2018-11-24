@@ -19,6 +19,11 @@ def plt_income(arr,bins,index_name):
     ax0.set_title(index_name+'roe变化')
     ax0.plot(bins,arr, 'o-')
     fig.autofmt_xdate()
+    cul = 0
+    for a, b in zip(bins, arr):
+        cul += 1
+        if cul % 4 == 0:
+            plt.text(a, b, float('%.2f' % b), ha='center', va='bottom', fontsize=15)
     plt.savefig('../../pic/index_roe/'+index_name, dpi=200) #指定分辨率
     plt.show()
 
