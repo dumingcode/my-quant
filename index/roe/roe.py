@@ -102,7 +102,7 @@ def plt_income(index_code,index_name,roe_pd,profit_pd,level_pd,turnover_pd,roa_p
     axes[2,1].set_title(index_name+'杜邦公式三要素同比变化率')
     p1=axes[2,1].bar(year_arr, income_compare_year,width)
     p2=axes[2,1].bar(year_arr, level_compare_year,width)
-    p3=axes[2,1].bar(year_arr, turnovew_compare_year,width,bottom=min_arr)
+    p3=axes[2,1].bar(year_arr, turnovew_compare_year,width)
     
 
     plt.legend((p1[0], p2[0], p3[0]), ('净利润', '杠杆','资产周转率'))
